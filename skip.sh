@@ -5,7 +5,7 @@
 ## Login   <pliso_c@epitech.net>
 ## 
 ## Started on  Mon Jun 22 09:10:16 2015 christian pliso
-## Last update Mon Jun 22 11:21:30 2015 christian pliso
+## Last update Mon Jun 22 15:03:44 2015 christian pliso
 ##
 
-awk '{print $3, $9}' | grep \ $1
+awk '{print $3 , $9}' | grep \ $1
