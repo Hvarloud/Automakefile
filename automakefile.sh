@@ -5,7 +5,7 @@
 ## Login   <pliso_c@epitech.net>
 ## 
 ## Started on  Mon Jun 22 12:53:12 2015 christian pliso
-## Last update Mon Jun 22 17:09:23 2015 christian pliso
+## Last update Mon Jun 22 17:23:52 2015 christian pliso
 ##
 
 mkdir -p "`cat $1 | grep ^'REP;' | cut -c5- `"
@@ -27,7 +27,9 @@ echo '' >> ./"`cat $1 | grep ^'REP;' | cut -c5- `"/Makefile
 echo 'all : $(NAME)
 
 $(NAME): $(OBJ)
-        $(COMP) $(NAME) $(OBJ) $(LIB) $(CFLAGS)
+	@$(COMP) $(NAME) $(SRC) && echo -e "\033[32m\nCompilation terminée !\033[00m" || echo -e "\033[31m\n\
+Echec de la compilation :($\033[00m"
+
 clean:
         $(RM) $(OBJ)
 
