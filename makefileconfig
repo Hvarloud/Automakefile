@@ -1,4 +1,4 @@
-nom_du_fichier_source;dépendance1;dépendance2;...
+nom_du_fichier_source;dépendance1;dépendance2.c;salut.c;
 (précisez les extensions des fichiers, mais pas les répertoires définis ci-après)
 REP;nom_du_dossier_racine_du_projet
 SOURCES;sous_répertoire_où_se_trouvent_les_fichiers_sources
