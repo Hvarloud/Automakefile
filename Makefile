@@ -5,22 +5,24 @@
 ## Login   <pliso_c@epitech.net>
 ## 
 ## Started on  Mon Jun 22 12:23:21 2015 christian pliso
-## Last update Tue Jun 23 13:45:05 2015 christian pliso
+## Last update Tue Jun 23 14:27:35 2015 christian pliso
 ##
 
 NAME	=	
 
-SRC	= 	$(wildcard *.c)
+SRC	= 
 
 OBJ	=	$(SRC:.c=.o)
 
-COMP	= 	
+COMP	= 	gcc	
 
 LIBS	=
 
 CFLAGS	=	
 
 LDFLAGS	=	
+
+RM	= 	rm -f
 
 WHITE	=	\e[0m
 
@@ -31,7 +33,7 @@ RED	=	\e[33;31m
 all:		$(NAME)
 
 $(NAME): 	$(OBJ)
-		@$(COMP) $(NAME) $(OBJ) $(CDFLAGS) $(LDFLAGS) && echo -e "$(GREEN)\nCompilation terminée !$(WHITE)" || echo -e "$(RED)\nEchec de la compilation :($(WHITE)"
+		@$(COMP) -o $(NAME) $(OBJ) $(CDFLAGS) $(LDFLAGS) && echo -e "$(GREEN)\nCompilation terminée !$(WHITE)" || echo -e "$(RED)\nEchec de la compilation :($(WHITE)"
 
 %.o:    	%.c
 		@$(COMP) -o $@ $^ -I ./include -o $@

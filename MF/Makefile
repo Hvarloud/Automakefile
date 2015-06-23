@@ -5,12 +5,12 @@
 ## Login   <pliso_c@epitech.net>
 ## 
 ## Started on  Mon Jun 22 12:23:21 2015 christian pliso
-## Last update Tue Jun 23 11:03:44 2015 christian pliso
+## Last update Tue Jun 23 14:28:03 2015 christian pliso
 ##
 
 NAME	=	
 
-SRC	= 	$(wildcard *.c)
+SRC	=
 
 OBJ	=	$(SRC:.c=.o)
 
@@ -20,7 +20,9 @@ LIBS	=
 
 CFLAGS	=	
 
-LDFLAGS	=	
+LDFLAGS	=
+
+RM	=	rm -f	
 
 WHITE	=	\e[0m
 
