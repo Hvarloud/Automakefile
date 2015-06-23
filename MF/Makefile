@@ -5,16 +5,16 @@
 ## Login   <pliso_c@epitech.net>
 ## 
 ## Started on  Mon Jun 22 12:23:21 2015 christian pliso
-## Last update Tue Jun 23 17:55:57 2015 christian pliso
+## Last update Tue Jun 23 21:31:52 2015 christian pliso
 ##
 
-NAME	=
+NAME	= 	Executable
 
 SRC	= 
 
 OBJ	=	$(SRC:.c=.o)
 
-COMP	=
+COMP	=	cc
 
 LIBS	=
 
