@@ -5,16 +5,16 @@
 ## Login   <pliso_c@epitech.net>
 ## 
 ## Started on  Mon Jun 22 12:23:21 2015 christian pliso
-## Last update Tue Jun 23 16:20:10 2015 christian pliso
+## Last update Tue Jun 23 17:58:28 2015 christian pliso
 ##
 
-NAME	=	
+NAME	=
 
 SRC	= 
 
 OBJ	=	$(SRC:.c=.o)
 
-COMP	= 
+COMP	=
 
 LIBS	=
 
@@ -22,21 +22,21 @@ CFLAGS	+=
 
 LDFLAGS	=	
 
-RM	= 
+RM	= 	rm -f
 
 all:		$(NAME)
 
 $(NAME): 	$(OBJ)
-		@$(COMP) -o $(NAME) $(OBJ) $(LDFLAGS) && echo -e "$(GREEN)\nCompilation terminée !$(WHITE)" || echo -e "$(RED)\nEchec de la compilation :($(WHITE)"
+		@$(COMP) -o $(NAME) $(OBJ) $(LDFLAGS) && echo -e "\033[32mCompilation terminée !\033[00m" || echo -e "\033[31mEchec de la compilation :(\033[00m"
 
-%.o:    	%.c
-		@$(COMP) -o $@ $^ $(CFLAGS)
+%.o:		%.c
+		@$(COMP) -c -o $@ $^ $(CFLAGS)
 
 clean:
-		@$(RM) $(OBJ) echo -e "\033[32mNettoyage des objets exécuté.\033[00m" || echo -e "\O33[31Nettoyage des objets echoué\033[00m"
+		@$(RM) $(OBJ) && echo -e "\033[32mNettoyage des objets exécuté.\033[00m" || echo -e "\O33[31mNettoyage des objets echoué\[\e[0m\]"
 
 fclean:		clean
-		@$(RM) $(NAME) echo -e "\033[32Suppression du binaire terminée.\033[00m" || echo -e "\033[31Echec de la suppression.\O33[OOm"
+		@$(RM) $(NAME) && echo -e "\033[32mSuppression du binaire terminée.\033[00m" || echo -e "\033[31mEchec de la suppression.\[\e[0m\]"
 
 re:		fclean all
 
