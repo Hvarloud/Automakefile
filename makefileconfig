@@ -8,3 +8,8 @@ EXEC; ???
 COMP;cc
 CFLAGS;flag_de_compilation1 flag_de_compilation2 ...
 LDFLAGS;flag_de_linkage1 flag_de_linkage2 ...
+REP_SVG;SAVE
+ZIP;nom_du_binaire_de_compression
+ZIPFLAGS;options_de_compression
+UNZIP;nom_du_binaire_de_décompression
+UNZIPFLAGS;options_de_décompression
