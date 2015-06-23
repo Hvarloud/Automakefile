@@ -5,12 +5,12 @@
 ## Login   <pliso_c@epitech.net>
 ## 
 ## Started on  Mon Jun 22 12:23:21 2015 christian pliso
-## Last update Mon Jun 22 17:23:35 2015 christian pliso
+## Last update Tue Jun 23 08:59:30 2015 christian pliso
 ##
 
 NAME	=	
 
-SRC	=	
+SRC	=
 
 OBJ	=	$(SRC:.c=.o)
 
@@ -19,8 +19,6 @@ COMP	=
 CFLAGS	=	
 
 LDFLAGS	=	
-
-RM	=	rm -f
 
 WHITE	=	\e[0m
 
